@@ -1,2 +1,14 @@
 #include <stdio.h>
-int main(void){int a;long s=0;scanf("%d",&a);if(a<0){printf("NG");return 0;}for(int i=1;;i++){if(i>a)break;if(i%3==0||i%5==0)continue;s+=i;}printf("%ld",s);return 0;}
+int main(void){
+    int in;
+    long total = 0;
+    scanf("%d", &in);
+    if(in<0){
+        printf("NG");
+        return 0;
+    } for(int out = 1 ; out <= in ; out++){
+        if(out % 3 == 0 || out % 5 == 0)continue;
+        total += out;
+    } printf("%ld", total);
+    return 0;
+}
